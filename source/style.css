@@ -1,0 +1,274 @@
+body{
+	background-color: #F7F7F7;
+}
+
+main{
+	margin-top: 70px;
+}
+
+.border-shadow{
+	border: none;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+
+.custom-container{
+	margin: 0px 2rem 15px 2rem;
+}
+
+.img-topography-blue{
+	background-image: url(https://s3.us-east-2.amazonaws.com/statics.tpn.to/backgrounds/topography-blue.svg);
+}
+
+.img-responsive{
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+}
+
+.muted-custom-size{
+	font-size: 0.7rem;
+}
+
+ul li{
+	list-style: none;
+}
+
+.usd-nav{
+	
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.text-bold{
+	font-weight: bold;
+}
+
+/* HEADER */
+
+/* * {
+	margin:0px;
+	padding:0px;
+} */
+
+header {
+	margin:auto;
+	width:500px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+ul, ol {
+	list-style:none;
+}
+
+.navbar-nav {
+	width:500px; /*Le establecemos un ancho*/
+	margin:0 auto; /*Centramos automaticamente*/
+}
+
+.navbar-nav > li {
+	float:left;
+}
+
+.menu-superior > ul > li > a {
+	/* background-color:#f8f9fa; */
+	color:#000000;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+}
+
+.submenu li a {
+	background-color:#f8f9fa;
+	color:#000000;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+}
+
+.navbar-nav li a:hover {
+	background-color:#e7e7e7;
+	color:#202020;
+}
+
+.bg-image-header {
+	right: 0;
+	background-color: rgb(230, 230, 230);
+	z-index: 999999;
+	display: flex;
+	position: absolute;
+	width: 30vw;
+	height: 100%;
+	min-height: 150px;
+	/* display: none; */
+	top: 0;
+}
+
+.nav-item:hover .bg-image-header,
+.menu-superior:hover .bg-image-header,
+ul.bg-light:hover .bg-image-header,
+.menu-superior:hover .bg-image-header {
+	display: flex !important;
+}
+
+
+.navbar-nav li ul {
+	/* display:none; */
+	/* position:absolute; */
+	min-width:140px;
+
+	width: 100%;
+	/* max-width: 600px; */
+	/* position: absolute; */
+	left: 0;
+}
+
+.menu-superior ul li .submenu {
+	display:none;
+	/* position: absolute !important; */
+	margin-left: 30vw;
+}
+
+
+
+.menu-superior {
+	display: none;
+	/* display:none; */
+	min-width:140px;
+
+	width: 100%;
+	/* max-width: 600px; */
+	position: absolute;
+	left: 0;
+	padding: 3rem 0rem 2rem;
+	
+	height: 400px;
+	padding-top: 0.5rem;
+}
+
+.menu-superior ul li {
+	width: 30%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.menu-superior ul {
+	padding-top: 2.5rem !important;
+}
+
+/* .navbar-nav li > .menu-superior,
+.navbar-nav li > .menu-superior ul, */
+.navbar-nav li:hover > .menu-superior,
+.navbar-nav li:hover > .menu-superior li:hover > ul {
+	display: block;
+}
+
+.navbar-nav li ul li {
+	position: relative;
+}
+
+.navbar-nav > li > div > ul > li {
+	display: flex;
+}
+
+.navbar-nav li ul li .submenu {
+	right:-140px;
+	top:0px;
+	/* position: inherit !important; */
+	z-index: 1;
+	position: inherit;
+}
+
+.submenu{
+	position: fixed !important;
+	margin-top: 3rem;
+	display: block;
+	padding-left: 0rem !important;
+	padding-right: 0rem !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	margin-top: 3rem !important;
+	margin-bottom: 1rem !important;
+}
+
+.submenu li{
+	display: flex;
+	justify-content: center !important;
+}
+
+.bg-costom-menu,
+.bg-costom-menu > a{
+	/* background-color: #45ac7d; */
+	/* color: #ffffff; */
+}
+
+.bg-costom-menu > a:hover{
+	/* background-color: blue; */
+	color: #000000;
+}
+
+/* STRICTS */
+
+a{
+	text-decoration: none !important;
+}
+a:hover{
+	text-decoration: underline black !important;
+}
+
+.custom-logo{
+	max-width: 170px !important;
+	max-height: 50px !important;
+}
+
+ul {
+	padding: 0px !important;
+}
+
+input{
+	border: 1px solid #ced4da !important;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
+	border-color: #ced4da !important;
+}
+
+.border-none{
+	border: none !important;
+}
+
+.fit-content{
+	width: fit-content !important;
+}
+
+.custom-size{
+	font-size: 5rem !important;
+}
+
+/* RULES */
+
+@media (min-width: 576px){ /* sm */
+
+}
+
+@media (min-width: 768px){ /* md */
+
+}
+
+@media (min-width: 992px){ /* lg */
+	.custom-container{
+    max-width: 964px;
+		margin: 0px auto 15px auto;
+	}
+}
+
+@media (min-width: 1200px){ /* xl */
+
+}
+
+@media (min-width: 1400px){ /* xxl */
+
+}
